@@ -241,8 +241,7 @@ getGearRatiosInLine(const string prev_line,
                strcmp(&prev_line[0], "\0") != 0         &&
                (rc_a = getGearRatio(prev_line, i)) != 0 &&
                isdigit(line[i + 1])                     &&
-               !isdigit(line[i - 1])
-               )
+               !isdigit(line[i - 1]))
             {
                 sum += rc_a * atoi(&line[i + 1]);
                 continue;
